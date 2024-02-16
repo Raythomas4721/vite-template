@@ -2,7 +2,7 @@
 <template>
   <div>
     <RouterLink to="/admin">DashBoard</RouterLink> |
-    <RouterLink to="/admin/products">Products Control Panel</RouterLink>
+    <RouterLink to="/admin/productsControl">Products Control Panel</RouterLink>
     <h1>這是後台頁</h1>
     <RouterView></RouterView>
   </div>

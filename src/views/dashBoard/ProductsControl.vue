@@ -69,20 +69,6 @@
             </div>
           </div>
         </div>
-        <!-- Modal -->
-        <product-modal
-          :temp-product="tempProduct"
-          :update-product="updateProduct"
-          :del-picture="delPicture"
-          :add-picture="addPicture"
-          :new-picture-url="newPictureUrl"
-        >
-        </product-modal>
-        <!--delModal-->
-        <del-product-modal
-          :temp-product="tempProduct"
-          :del-product="delProduct"
-        ></del-product-modal>
       </div>
     </div>
     <RouterView></RouterView>
