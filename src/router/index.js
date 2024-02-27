@@ -36,6 +36,11 @@ const routes = [
         component: () => import('../views/dashBoard/ProductsControl.vue')
       }
     ]
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    name: 'NotFound',
+    component: () => import('@/views/NotFound.vue')
   }
 ]
 

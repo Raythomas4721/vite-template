@@ -106,33 +106,14 @@ const { VITE_URL, VITE_PATH } = import.meta.env
 export default {
   data () {
     return {
-      user: {
-        username: '',
-        password: ''
-      },
       products: [],
       tempProduct: {}
     }
   },
   methods: {
-    checkStatus () {
-      const hexToken = document.cookie.replace(
-        /(?:(?:^|.*;\s*)hexToken\s*=\s*([^;]*).*$)|^.*$/,
-        '$1'
-      )
-      axios.defaults.headers.common.Authorization = hexToken
-      axios
-        .post(`${VITE_URL}/v2/api/user/check`)
-        .then((res) => {})
-        .catch((err) => {
-          console.log(err)
-          alert('Login fail')
-          window.location = 'index.html'
-        })
-    },
     getProducts () {
       axios
-        .get(`${VITE_URL}/v2/api/${VITE_PATH}/admin/products/all`)
+        .get(`${VITE_URL}/v2/api/${VITE_PATH}/products/all`)
         .then((res) => {
           this.products = res.data.products
         })
@@ -145,7 +126,6 @@ export default {
     }
   },
   mounted () {
-    this.checkStatus()
     this.getProducts()
   }
 }
