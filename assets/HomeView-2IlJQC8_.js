@@ -1,0 +1,1 @@
+import{_ as o,c as t,o as c,d as e}from"./index-OEUX2p6I.js";const s={},n=e("h1",null,"這是主頁",-1),_=e("p",null,"主畫面說明",-1),r=[n,_];function a(l,d){return c(),t("div",null,r)}const f=o(s,[["render",a]]);export{f as default};
