@@ -6,6 +6,8 @@
 export default {}
 </script>
 
-<style lang="scss">
-
+<style>
+body {
+  background-color : #f1e0d2;
+}
 </style>

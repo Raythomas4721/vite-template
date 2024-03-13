@@ -34,6 +34,11 @@ const routes = [
         path: 'productsControl',
         name: 'ProductsControl',
         component: () => import('../views/dashBoard/ProductsControl.vue')
+      },
+      {
+        path: 'ordersControl',
+        name: 'OrdersControl',
+        component: () => import('../views/dashBoard/OrdersControl.vue')
       }
     ]
   },

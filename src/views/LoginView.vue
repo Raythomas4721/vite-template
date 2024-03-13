@@ -60,7 +60,7 @@ export default {
   },
   methods: {
     signIn () {
-      axios.post(`${VITE_URL}/v2/admin/signin`, this.user)
+      axios.post(`${VITE_URL}admin/signin`, this.user)
         .then(res => {
           const { token, expired } = res.data
           // const hexToken = document.cookie.replace(
